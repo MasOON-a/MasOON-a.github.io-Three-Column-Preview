@@ -1,0 +1,126 @@
+*{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+
+}
+body{
+  background-color: hsl(0, 0%, 95%);
+  padding: 10%;
+}
+.master{
+    display: flex;
+}
+
+/* All Boxes */
+
+.content-box{
+  padding: 6%;
+  width: 33%;
+}
+.content-box .head{
+  font-family: 'Big Shoulders Display', cursive;
+  font-weight: 700;
+  font-size: 40px;
+
+  text-transform: uppercase;
+  color: hsl(0, 0%, 95%);
+
+  padding: 40px 0px;
+}
+.content-box .body{
+    font-family: 'Lexend Deca', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+
+    color: hsl(0, 0%, 95%);
+
+    padding-bottom: 65px;
+}
+.content-box button{
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 40px;
+  border: 2px solid white;
+  padding: 20px 30px;
+  font-family: 'lexend deca', sans-serif;
+  transition-duration: 250ms;
+  transition-timing-function: ease-out;
+}
+
+/* Left Box */
+
+.left-box{
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 7px 0px 0px 7px;
+}
+.left-box button{
+    color:hsl(31, 77%, 52%);
+}
+.left-box button:hover{
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color: unset;
+    border: 2px solid white;
+    transition-duration: 250ms;
+    transition-timing-function: ease-in-out;
+}
+
+/* Center Box */
+
+.center-box{
+  background-color: hsl(184, 100%, 22%);
+}
+.center-box button{
+    color:hsl(184, 100%, 22%);
+}
+.center-box button:hover{
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color: unset;
+    border: 2px solid white;
+    transition: 250ms;
+    transition-timing-function: ease-in;
+}
+
+/* Right Box */
+
+.right-box{
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0px 7px 7px 0px;
+}
+.right-box button{
+    color:hsl(179, 100%, 13%);
+}
+.right-box button:hover{
+    color:hsl(0, 0%, 95%);
+    cursor: pointer;
+    background-color: unset;
+    border: 2px solid white;
+    transition: 250ms;
+    transition-timing-function: ease-in;
+}
+
+/* Mobile Design!! */
+
+@media(max-width: 500px){
+
+body{
+  padding: 20% 5%;
+}
+.master{
+  display: block;
+}
+.content-box{
+    width: unset;
+    padding: 8%;
+}
+.left-box{
+  border-radius: 7px 7px 0px 0px;
+}
+.center-box{
+  border-radius: unset;
+}
+.right-box{
+  border-radius: 0px 0px 7px 7px;
+}
+}

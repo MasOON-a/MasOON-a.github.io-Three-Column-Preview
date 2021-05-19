@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <!-- Style Sheet -->
+  <link rel="stylesheet" href="./_global.css">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap" rel="stylesheet">
+  
+
+  <title>Frontend Mentor | 3-column preview card component</title>
+
+
+
+  <!-- Feel fre to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+  *{
+  margin: 0px;
+  padding: 0px;
+  border: 0px;
+
+  }
+  body{
+    background-color: hsl(0, 0%, 95%);
+    padding: 10%;
+  }
+  .master{
+      display: flex;
+  }
+
+  /* All Boxes */
+
+  .content-box{
+    padding: 6%;
+    width: 33%;
+  }
+  .content-box .head{
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    font-size: 40px;
+
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+
+    padding: 40px 0px;
+  }
+  .content-box .body{
+      font-family: 'Lexend Deca', sans-serif;
+      font-size: 20px;
+      font-weight: 400;
+
+      color: hsl(0, 0%, 95%);
+
+      padding-bottom: 65px;
+  }
+  .content-box button{
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 40px;
+    border: 2px solid white;
+    padding: 20px 30px;
+    font-family: 'lexend deca', sans-serif;
+    transition-duration: 250ms;
+    transition-timing-function: ease-out;
+  }
+
+  /* Left Box */
+
+  .left-box{
+    background-color: hsl(31, 77%, 52%);
+    border-radius: 7px 0px 0px 7px;
+  }
+  .left-box button{
+      color:hsl(31, 77%, 52%);
+  }
+  .left-box button:hover{
+      color:hsl(0, 0%, 95%);
+      cursor: pointer;
+      background-color: unset;
+      border: 2px solid white;
+      transition-duration: 250ms;
+      transition-timing-function: ease-in-out;
+  }
+
+  /* Center Box */
+
+  .center-box{
+    background-color: hsl(184, 100%, 22%);
+  }
+  .center-box button{
+      color:hsl(184, 100%, 22%);
+  }
+  .center-box button:hover{
+      color:hsl(0, 0%, 95%);
+      cursor: pointer;
+      background-color: unset;
+      border: 2px solid white;
+      transition: 250ms;
+      transition-timing-function: ease-in;
+  }
+
+  /* Right Box */
+
+  .right-box{
+    background-color: hsl(179, 100%, 13%);
+    border-radius: 0px 7px 7px 0px;
+  }
+  .right-box button{
+      color:hsl(179, 100%, 13%);
+  }
+  .right-box button:hover{
+      color:hsl(0, 0%, 95%);
+      cursor: pointer;
+      background-color: unset;
+      border: 2px solid white;
+      transition: 250ms;
+      transition-timing-function: ease-in;
+  }
+
+  /* Mobile Design!! */
+
+  @media(max-width: 500px){
+
+  body{
+    padding: 20% 5%;
+  }
+  .master{
+    display: block;
+  }
+  .content-box{
+      width: unset;
+      padding: 8%;
+  }
+  .left-box{
+    border-radius: 7px 7px 0px 0px;
+  }
+  .center-box{
+    border-radius: unset;
+  }
+  .right-box{
+    border-radius: 0px 0px 7px 7px;
+  }
+  }
+  </style>
+
+  
+</head>
+<body>
+  <section class="master">
+
+    <section class="left-box content-box">
+      <img src="./icon-sedans.svg" class="icon"/>
+      <div class="head">Sedans</div>
+      <div class="body">Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in the city 
+        or on your next road trip.</div>
+      <button>Learn More</button>
+    </section>
+
+    <section class="center-box content-box">
+      <img src="./icon-suvs.svg" class="icon"/>
+      <div class="head">SUVs</div>
+      <div class="body">Take an SUV for its spacious interior, power, and versatility. Perfect for your next family vacation 
+        and off-road adventures.</div>
+      <button>Learn More</button>
+    </section>
+
+    <section class="right-box content-box">
+      <img src="./icon-luxury.svg" class="icon"/>
+      <div class="head">Luxury</div>
+      <div class="body">Cruise in the best car brands without the bloated prices. Enjoy the enhanced comfort of a luxury 
+        rental and arrive in style.</div>
+      <button>Learn More</button>
+    </section>
+
+  </section>
+  
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Mason Matich</a>.
+  </div>
+</body>
+</html>
